@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "client"
+		}
+    ],
+    "settings": {}
+    				"tasks": {
+					"version": "2.0.0",
+					"tasks": [
+						{
+							"label": "Uncrustify format",
+							"type": "shell",
+							"command": "uncrustify -c ../../uncrustify.cfg -f ${file} -o ${file} --no-backup",
+							"options": {
+								"cwd": "${workspaceFolder}"
+							},
+							"presentation": { "reveal": "never"}
+						}
+					]
+				}
+}
